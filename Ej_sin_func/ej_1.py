@@ -226,7 +226,7 @@ Pide al usuario un número y usa el operador & para verificar si es par o impar.
 """
 numero = int(input("Digite el número: "))
 
-if numero & 1 ==0:
+if numero & 1 == 0:
     print("es par")
 else:
     print("no es par")

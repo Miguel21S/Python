@@ -171,3 +171,18 @@ def lista_ordenada_true(lista):
 lista = [1, 2, 3, 4, 5]
 lista_ = lista_ordenada_true(lista)
 print(lista_)
+
+"""
+Suma y promedio de una lista
+    Crea una lista con 5 números enteros.
+    Calcula la suma de todos los números.
+    Calcula el promedio y muestra el resultado.    
+"""
+t = " Suma y promedio de una lista "
+print(t.center(50, "="))
+
+lista = [45, 21, 3, 64, 5]
+suma = sum(lista)
+promedio = suma / len(lista)
+print(f"La suma de los valores de la lista: {suma}\nEl promedio de la suma: {promedio}")
+
