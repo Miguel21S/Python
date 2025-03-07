@@ -35,3 +35,28 @@ tupla2 = (4, 5, 6)
 
 tupla3 = tupla1 + tupla2
 print(tupla3)
+
+"""
+Desempaquetado de tuplas en funciones
+    scribe una función que reciba una tupla de tres números (a, b, c) y devuelva el resultado de la ecuación:
+"""
+print("\n" + " Desempaquetado de tuplas en funciones ".center(50, "="))
+
+def tupla_func(val1, val2, val3):
+    return val1**2 + val2**2 - val3**2
+
+tuplas = (2, 4, 6)
+resultado = tupla_func(*tuplas)
+print(resultado)
+
+"""
+Convertir una tupla en diccionario
+    Dada la tupla:
+        tupla = (("nombre", "Carlos"), ("edad", 30), ("ciudad", "Madrid"))
+    Convierte la tupla en un diccionario y muestra el resultado.
+"""
+print("\n" + " Convertir una tupla en diccionario ".center(50, "="))
+
+tupla = (("nombre", "Carlos"), ("edad", 30), ("ciudad", "Madrid"))
+diccionario = dict(tupla)
+print(diccionario)

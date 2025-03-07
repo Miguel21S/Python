@@ -15,7 +15,6 @@ i = 0
 while i < 5:
     nuemros = int(input(f"Digite 5 números de {i+1}/5: "))
     lista.append(nuemros)
-    
     i += 1
 
 lista.pop()
@@ -178,11 +177,9 @@ Suma y promedio de una lista
     Calcula la suma de todos los números.
     Calcula el promedio y muestra el resultado.    
 """
-t = " Suma y promedio de una lista "
-print(t.center(50, "="))
+print("\n" + " Suma y promedio de una lista ".center(50, "="))
 
 lista = [45, 21, 3, 64, 5]
 suma = sum(lista)
 promedio = suma / len(lista)
 print(f"La suma de los valores de la lista: {suma}\nEl promedio de la suma: {promedio}")
-
