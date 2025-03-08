@@ -1,5 +1,7 @@
 from itertools import combinations
+from collections import defaultdict, Counter
 
+print("\n" + " Encuentra la sublista con la suma más alta ".center(70, "="))
 """
 Encuentra la sublista con la suma más alta
     Dada una lista de números enteros (positivos y negativos), encuentra la sublista contigua con la suma máxima.
@@ -8,7 +10,6 @@ Encuentra la sublista con la suma más alta
     La sublista [4, -1, 2, 1, -5, 4, 6] tiene la mayor suma.
     Pista: Usa el algoritmo de Kadane.
 """
-print("\n" + " Encuentra la sublista con la suma más alta ".center(70, "="))
 def kadane_maximo(numeros):
     suma_max = numeros[0]
     suma_actual = numeros[0]
@@ -23,6 +24,7 @@ suma = kadane_maximo(numeros)
 print(suma)
 
 
+print("\n" + " Generar todas las combinaciones posibles de una tupla ".center(70, "="))
 """
 Generar todas las combinaciones posibles de una tupla
     Dada una tupla con valores únicos:
@@ -30,7 +32,6 @@ Generar todas las combinaciones posibles de una tupla
     Genera todas las combinaciones posibles de sus elementos en subconjuntos de tamaño 2 y 3.
     Pista: Usa itertools.combinations.
 """
-print("\n" + " Generar todas las combinaciones posibles de una tupla ".center(70, "="))
 
 tupla = (1, 2, 3, 4)
 # lista = list(tupla)
@@ -40,6 +41,8 @@ combinacion_3 = list(combinations(tupla, 3))
 print(f"combinación de tamaño 2: {combinacion_2}")
 print(f"combinación de tamaño 3: {combinacion_3}")
 
+
+print("\n" + " Encuentra la secuencia más larga de números consecutivos en un set ".center(100, "="))
 """
 Encuentra la secuencia más larga de números consecutivos en un set
     Dado un conjunto de números desordenados:
@@ -48,7 +51,6 @@ Encuentra la secuencia más larga de números consecutivos en un set
     En este caso, la secuencia más larga es [1, 2, 3, 4, 5, 6] con longitud 6.
     Pista: Un enfoque eficiente usa un set y evita ordenar la lista directamente.
 """
-print("\n" + " Encuentra la secuencia más larga de números consecutivos en un set ".center(100, "="))
 
 def sequencias(numeros):
     numeros_set = set(numeros)
@@ -74,3 +76,23 @@ numeros = {100, 4, 200, 1, 3, 2, 101, 102, 5, 6}
 resultado = sequencias(numeros)
 print(f"Tamaño de la sequencia: {len(resultado)}")
 print(f"Mejor sequencia: {resultado}")
+
+print("\n"+ " Fusionar dos diccionarios sumando valores de claves comunes ".center(100, "="))
+"""
+Fusionar dos diccionarios sumando valores de claves comunes
+    Dado dos diccionarios con valores numéricos:
+        dict1 = {"a": 10, "b": 20, "c": 30}
+        dict2 = {"b": 5, "c": 15, "d": 40}
+    Fusiona ambos diccionarios de forma que las claves repetidas sumen sus valores y las no repetidas se mantengan.
+    Salida esperada:
+        {"a": 10, "b": 25, "c": 45, "d": 40}
+    Pista: Usa collections.Counter o dict.get().
+"""
+dict1 = {"a": 10, "b": 20, "c": 30}
+dict2 = {"b": 5, "c": 15, "d": 40}
+resultado = defaultdict(int, dict1)
+
+for clave, valor in dict2.items():
+    resultado[clave] += valor
+  
+print(dict(resultado))

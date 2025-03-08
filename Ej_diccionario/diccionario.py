@@ -71,6 +71,7 @@ print(grupos)
 
 print("\n" + " Sugerencia ".center(100, "="))
 
+print("\n"+" Sugerencia ".center(50, "="))
 alumnos = [("Juan", "A"), ("Ana", "B"), ("Pedro", "A"), ("Sofia", "B"), ("Luis", "C")]
 grupos = defaultdict(list)
 
