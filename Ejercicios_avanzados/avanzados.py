@@ -1,3 +1,4 @@
+import string
 from itertools import combinations
 from collections import defaultdict, Counter
 
@@ -96,3 +97,25 @@ for clave, valor in dict2.items():
     resultado[clave] += valor
   
 print(dict(resultado))
+
+print("\n"+ " Contar palabras en un texto ignorando stopwords y puntuación ".center(100, "="))
+"""
+Contar palabras en un texto ignorando stopwords y puntuación
+    Dado un texto, cuenta la frecuencia de cada palabra ignorando palabras comunes ("stopwords") y signos de puntuación.
+    Ejemplo de texto:
+        texto = "Python es un lenguaje de programación. Python es muy potente y versátil."
+        stopwords = {"es", "un", "de", "y"}
+    Salida:
+        {"python": 2, "lenguaje": 1, "programación": 1, "muy": 1, "potente": 1, "versátil": 1}
+    Pista: Usa string.punctuation y split().
+"""
+
+texto = "Python es un lenguaje de programación. Python es muy potente y versátil.".lower()
+stopwords = {"es", "un", "de", "y"}
+
+texto = texto.translate(str.maketrans("", "", string.punctuation))
+lista = list(texto.split(" "))
+
+contar_palabra = [palabra for palabra in lista if palabra not in stopwords]
+    
+print(f"{Counter(contar_palabra)}")
