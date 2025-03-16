@@ -1,8 +1,8 @@
 
-import Cachorro
+import cachorro
 
-cao_1 = Cachorro.Cachorro("Tyger", "Castanho")
-cao_2 = Cachorro.Cachorro("Yuri", "Branco e Preto")
+cao_1 = cachorro.Cachorro("Tyger", "Castanho")
+cao_2 = cachorro.Cachorro("Yuri", "Branco e Preto")
 print(cao_1)
 cao_1.latir()
 

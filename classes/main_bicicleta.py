@@ -1,6 +1,6 @@
-import Bicicleta
+import bicicleta
 
-bici = Bicicleta.Bicicleta("Amarelo", "Bic-21", 2018, 100)
+bici = bicicleta.Bicicleta("Amarelo", "Bic-21", 2018, 100)
 print(bici)
 
 bici.buzinar()
