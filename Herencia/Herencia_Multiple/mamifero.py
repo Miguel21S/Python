@@ -9,7 +9,7 @@ class Voador:
 
 class Murciego(Mamifero, Voador):
     def fazer_ruido(self):
-        print("chirp, chirp")
+        print("Fazer ruido: chirp, chirp")
         
 
 bat = Murciego()
