@@ -5,11 +5,11 @@ class Carro(veiculo.Veiculo, motor.Motor):
         veiculo.Veiculo.__init__(self, marca, modelo)
         motor.Motor.__init__(self, tipo_de_motor)
         
-        self.portas = portas
+        self._portas = portas
         
     def mostrar_info(self):
         super().mostrar_info()
         super().mostrar_motor()
-        print(f"\tNúmero de portas: {self.portas}")
+        print(f"\tNúmero de portas: {self._portas}")
     
     
