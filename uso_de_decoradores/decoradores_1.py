@@ -39,7 +39,7 @@ class Rectangulo:
         
         self._ancho = nuevo_ancho
         
-    @ property
+    @property
     def alto(self):
         return self._alto
       

@@ -22,7 +22,7 @@ class Validador:
             float(numero)
             return True
         except ValueError:
-                return False
+            return False
     
 print(f"¿Es un número '123'? {Validador.es_numero('123')}")
 print(f"¿Es un número 'abc'? {Validador.es_numero('abc')}")
