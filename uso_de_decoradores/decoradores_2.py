@@ -10,7 +10,7 @@ class Empleado:
         
     @classmethod
     def contar_empleados(cls):
-        return cls(f"Total de empleados: {cls.total_empleados}")
+        return (f"Total de empleados: {cls.total_empleados}")
 
 empleado_1 = Empleado("Miguel", 2500)
 empleado_2 = Empleado("Simão", 2500)
