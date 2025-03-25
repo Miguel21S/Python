@@ -33,6 +33,6 @@ class Rectangulo:
 rectangulo = Rectangulo(2, 2)
 print(f"Resultado del area: {rectangulo.area}")
 rectangulo.ancho = 2
-rectangulo.alto = -4
+rectangulo.alto = 4
 print(f"Ancho: {rectangulo.ancho}\nAlto: {rectangulo.alto}")
 print(f"Nuevo resultado: {rectangulo.area}")
