@@ -1,3 +1,27 @@
+"""
+    Ejercicio 1: @property
+Objetivo:
+Crear una clase Rectangulo que tenga:
+
+Atributos ancho y alto.
+
+Un @property llamado area para calcular el área automáticamente.
+
+Un setter para asegurar que ancho y alto no sean negativos.
+
+📝 Instrucciones:
+Define la clase Rectangulo.
+
+Usa @property para crear un atributo calculado area.
+
+Usa @ancho.setter y @alto.setter para validar los valores.
+
+💡 Salida esperada:
+        Área del rectángulo: 20
+        Nuevo ancho: 10
+        Área actualizada: 40
+"""
+
 
 class Rectangulo:
     def __init__(self, ancho, alto):

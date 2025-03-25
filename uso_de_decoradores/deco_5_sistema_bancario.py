@@ -1,3 +1,24 @@
+""" 
+Ejercicio 5: @property con validación
+Objetivo:
+Crear una clase CuentaBancaria que tenga:
+
+Atributos: titular, saldo.
+
+Un @property llamado saldo que solo permita valores positivos.
+
+Métodos depositar() y retirar() para modificar el saldo.
+
+📝 Instrucciones:
+Valida que el saldo nunca sea negativo.
+
+Muestra un mensaje si se intenta retirar más dinero del que hay disponible.
+
+💡 Salida esperada:
+        Saldo actual: 1000
+        Depósito de 500: Nuevo saldo: 1500
+        Intento de retirar 2000: Saldo insuficiente
+"""
 
 class CuentaBancaria:
     def __init__(self, titular, saldo):

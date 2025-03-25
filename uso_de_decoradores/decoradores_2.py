@@ -1,3 +1,24 @@
+"""
+    Ejercicio 2: @classmethod
+Objetivo:
+Crear una clase Empleado con:
+
+Atributos nombre y salario.
+
+Un contador de empleados.
+
+Un método de clase contar_empleados() que devuelva el total de empleados.
+
+📝 Instrucciones:
+Define la clase Empleado.
+
+Usa un atributo de clase total_empleados.
+
+Implementa el método contar_empleados() usando @classmethod.
+
+💡 Salida esperada:
+        Total de empleados: 2
+"""
 
 class Empleado:
     total_empleados = 0

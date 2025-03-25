@@ -1,3 +1,21 @@
+"""
+Ejercicio 3: @staticmethod
+Objetivo:
+Crear una clase Conversor con:
+
+Un método estático celsius_a_fahrenheit() para convertir temperaturas.
+
+Un método estático fahrenheit_a_celsius().
+
+📝 Instrucciones:
+Define la clase Conversor.
+
+Implementa ambos métodos usando @staticmethod.
+
+💡 Salida esperada:
+        30°C a Fahrenheit: 86.0
+        98°F a Celsius: 36.67
+"""
 
 class Conversor:
     

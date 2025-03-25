@@ -1,3 +1,23 @@
+"""
+Ejercicio 4: @abstractmethod
+Objetivo:
+Crear una clase abstracta Forma con:
+
+Un método abstracto area().
+
+Dos clases Circulo y Cuadrado que lo implementen.
+
+📝 Instrucciones:
+Usa ABC y @abstractmethod para definir la clase Forma.
+
+Implementa las subclases Circulo y Cuadrado.
+
+Calcula el área de un círculo y un cuadrado.
+
+💡 Salida esperada:
+        Área del círculo: 78.54
+        Área del cuadrado: 25
+"""
 
 from abc import ABC, abstractmethod
 import math

@@ -1,3 +1,21 @@
+""" 
+Ejercicio 6: @classmethod como fábrica de objetos
+Objetivo:
+Crear una clase Producto con:
+
+Atributos: nombre, precio.
+
+Un método desde_string() que permita crear objetos a partir de un string en formato "nombre,precio".
+
+📝 Instrucciones:
+Usa @classmethod para implementar desde_string().
+
+Crea varios productos a partir de cadenas.
+
+💡 Salida esperada:
+        Producto: Televisor - Precio: 750
+        Producto: Laptop - Precio: 1200
+"""
 
 class Producto:    
     def __init__(self, nombre, precio):
