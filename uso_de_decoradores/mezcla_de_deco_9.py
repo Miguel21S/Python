@@ -51,7 +51,7 @@ class Temperatura:
         return temp <= 0
 
 try:        
-    temp = Temperatura(-500)
+    temp = Temperatura(25)
     print(temp)
 except ValueError as e:
     print(e)
