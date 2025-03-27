@@ -38,7 +38,7 @@ class EmpleadoPorHora(Empleado):
         
     def calcular_salario(self):
         salario = self.horas_trabajadas * self.salario_por_hora
-        return f"Salario del empleado por hora (h x €): {salario}€"
+        return f"Salario del empleado por hora ({self.horas_trabajadas}h x {self.salario_por_hora}€): {salario}€"
 
 empl_1 = EmpleadoTiempoCompleto()
 print(empl_1.calcular_salario())

@@ -32,8 +32,7 @@ class CuentaBancaria:
     def saldo(self):
         if self._saldo < 0:
             raise ValueError("El saldo no puede ser negativo")
-        else:
-            return self._saldo
+        return self._saldo
     
     def depositar(self, saldo):
         self._saldo += saldo
@@ -49,5 +48,8 @@ class CuentaBancaria:
 banco = CuentaBancaria("Miguel", 1000)
 print(banco)
 
-print(banco.depositar(500))
-print(banco.retirar(2000))
+try:
+    print(banco.depositar(500))
+    print(banco.retirar(2000))
+except ValueError as e:
+    print(e)
